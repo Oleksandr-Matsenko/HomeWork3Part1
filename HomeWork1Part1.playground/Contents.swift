@@ -252,6 +252,24 @@ for (index,product) in cart.enumerated(){
      }
     
  */
+print("Task: 1.6")
+for (index,product) in cart.enumerated(){
+    
+    print("------------------------ \(index + 1) -------------------------------")
+    print("Product name: \(product.0), Price: \(product.1)\(product.2)")
+    
+    let processorValue = product.4
+    
+    switch processorValue {
+    case "Intel":
+        print("Processor: Intel")
+    case "AMD":
+        print("Processor: AMD")
+    default:
+        print("Processor: Unknown")
+    }
+    
+}
 
 
 
