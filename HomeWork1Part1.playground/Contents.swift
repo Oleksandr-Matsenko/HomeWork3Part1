@@ -469,6 +469,15 @@ print("Processor type is: \(processorType)")
  створити змінну типу створенного enum з якимось із значень
  
  */
+print("\nTask: 3.2")
+enum Currency: String{
+case uan = "UAH"
+case usd = "USD"
+case eur = "EUR"
+}
+
+var currency = Currency.uan.rawValue
+print("Currency is: \(currency)")
 
 
 
