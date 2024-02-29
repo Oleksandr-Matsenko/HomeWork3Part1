@@ -398,6 +398,26 @@ checkPrice(maxPrice: 3000.0)
      -----------------------------------------------------------------------------------------
  
  */
+print("\nTask: 2.3")
+func processorMaxPrice(processor: String) -> ProductInfo {
+    var mostExpensiveProduct = (ProductInfo)("", 0.0, "", "", "")
+    var maxPrice: Double = 0
+    for product in cart{
+        if product.4 == processor && product.1 > maxPrice {
+            maxPrice = product.1
+            mostExpensiveProduct = product
+        }
+      
+    }
+
+    return mostExpensiveProduct
+    
+}
+//Check function
+var intel = processorMaxPrice(processor: "Intel")
+var amd = processorMaxPrice(processor: "AMD")
+print("--------- Most expensive product by processor \(intel.4) -------------\n\tProduct name: \(intel.0), Price: \(intel.1)\(intel.2)\n-----------------------------------------------------------")
+print("--------- Most expensive product by processor \(amd.4) -------------\n\tProduct name: \(amd.0), Price: \(amd.1)\(amd.2)\n-----------------------------------------------------------")
 
 
 
