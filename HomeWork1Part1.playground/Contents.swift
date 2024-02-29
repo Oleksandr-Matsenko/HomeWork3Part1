@@ -115,6 +115,16 @@ for (index, product) in cart.enumerated() {
     Ціна: 1717.00 ₴
     ------------------------------------------------------
  */
+print("\nTask: 1.3")
+var index = 0
+while index < cart.count {
+    let product = cart[index]
+    let prodactName = product.0
+    let price = product.1
+    let currency = product.2
+    print("------------------ \(index+1) ------------------\nProdact name: \(prodactName)\nPrice: \(price)\(currency)")
+    index += 1
+}
 
 
 
