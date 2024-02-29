@@ -191,6 +191,19 @@ repeat {
     Сокет: s1151
     ------------------------------------------------------
  */
+print("\nTask: 1.5")
+for (index,product) in cart.enumerated(){
+    let productName = product.0
+    let price = product.1
+    let currency = product.2
+    let socet = product.3
+    if price < 5000 && socet == "s1151" {
+        print("------------------------ \(index + 1) -----------------------------")
+        print("Product name: \(productName), Price: \(price) \(currency) \nSocet: \(socet)")
+    }
+    
+}
+
 
 
 
