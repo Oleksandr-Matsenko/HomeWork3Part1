@@ -354,6 +354,23 @@ sortByProcessor()
  !! не забудьте перевірити роботу функції викликавши її з максимальним значенням на свій розсуд для перевірки
  
  */
+print("\nTask: 2.2")
+
+func checkPrice(maxPrice: Double) {
+    print("----- Product`s with a price of less the: \(maxPrice)₴ --------")
+    for (index,product) in cart.enumerated(){
+        let productName = product.0
+        let productPrice = product.1
+        let currency = product.2
+        if productPrice < maxPrice {
+            print("\(index+1). Product name:\(productName),\n\tPrice: \(productPrice) \(currency)")
+        }
+    }
+    
+}
+
+checkPrice(maxPrice: 10000.0)
+checkPrice(maxPrice: 3000.0)
 
 
 
