@@ -84,6 +84,16 @@ for (index, product) in cart.enumerated() {
      Процессор: Intel
     ------------------------------------------------------
  */
+print("\nTask: 1.2")
+
+for (index, product) in cart.enumerated() {
+    let productName = product.0
+    let processor = product.4
+    print("------------------- \(index + 1) -------------------------------")
+    print("Product name: \(productName)")
+    print("Processor: \(processor)")
+}
+
 
 
 
