@@ -501,6 +501,15 @@ print("Currency is: \(currency)")
  створити змінну типу MotherBoard і спробувати поміняти їй інші значення
  
  */
+print("\nTask: 4.1")
+struct MotherBoard {
+var socet: String = "LGA1151"
+var processor: ProcessorType
+}
+var motherBoard = MotherBoard(socet: "LGA1356", processor: .intel)
+motherBoard.socet = "LGA1356"
+motherBoard.processor = .intel
+print("Processor: \(motherBoard.processor.rawValue),\nSocet: \(motherBoard.socet)")
 
 
 
