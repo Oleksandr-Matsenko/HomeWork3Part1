@@ -146,6 +146,18 @@ while index < cart.count {
     Сокет: s1151
     ------------------------------------------------------
  */
+print("\nTask: 1.4")
+var indexValue = 0
+repeat {
+    let product = cart[indexValue]
+    let prodactName = product.0
+    let price = product.1
+    let currency = product.2
+    print("------------------ \(indexValue+1) ------------------\nProdact name: \(prodactName)\nPrice: \(price)\(currency)")
+    
+    indexValue += 1
+} while indexValue < cart.count
+
 
 
 
