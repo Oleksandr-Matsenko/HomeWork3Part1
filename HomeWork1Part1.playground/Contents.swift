@@ -441,6 +441,17 @@ print("--------- Most expensive product by processor \(amd.4) -------------\n\tP
  
  */
 
+print("\nTask: 3.1")
+
+enum ProcessorType: String {
+case intel = "Intel"
+case amd = "AMD"
+}
+var processorType = ProcessorType.intel.rawValue
+
+print("Processor type is: \(processorType)")
+
+
 
 
 
