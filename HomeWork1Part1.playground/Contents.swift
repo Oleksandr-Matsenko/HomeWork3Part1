@@ -57,6 +57,13 @@ let cart: [ProductInfo] = [
     ------------------------------------------------------
  */
 
+print("\nTask: 1.1")
+for (index, product) in cart.enumerated() {
+    print("------------------- \(index + 1) -------------------------------")
+    print("Product name: \(product.0), Price: \(product.1)\(product.2)")
+    print("Socet: \(product.3), Processor: \(product.4)")
+}
+
 
 
 
