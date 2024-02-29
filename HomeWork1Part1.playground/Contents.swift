@@ -531,6 +531,23 @@ print("Processor: \(motherBoard.processor.rawValue),\nSocet: \(motherBoard.socet
  
  */
 
+print("\nTask: 4.2")
+
+class Product {
+    var name: String = ""
+    var price: Double = 0.0
+    var currency: Currency = .usd
+    var motherBoard = MotherBoard(socet: "LGA1151", processor: .intel)
+}
+    
+var product = Product()
+product.name = "Acer Predator"
+product.price = 2500.0
+product.currency = .eur
+product.motherBoard = (.init(socet: "LGA1265", processor: .amd))
+
+print("Prodact name: \(product.name)\nPrice: \(product.price)\nCurrency: \(product.currency.rawValue)\nMotherboard: \nsocet: \(product.motherBoard.socet) \nprocessor: \(product.motherBoard.processor)")
+
 
 
 
