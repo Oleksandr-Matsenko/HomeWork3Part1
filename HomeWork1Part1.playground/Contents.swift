@@ -308,6 +308,20 @@ for (index,product) in cart.enumerated(){
  !! не забудьте перевірити роботу функції викликавши її
  
  */
+print("\nTask: 2.1")
+func sortByProcessor() {
+    print("--------------- Intel ------------------")
+    for (index, value) in cart.enumerated() {
+        
+        let processor = value.4
+        let name = value.0
+        if processor == "Intel" {
+            print("\(index+1).Product name: \(name)")
+            
+        }
+    }
+}
+sortByProcessor()
 
 
 
